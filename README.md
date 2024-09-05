@@ -49,7 +49,7 @@ Example:
 ```rust
 let width = 15360;      // 16K resolution width
 let height = 8640;      // 16K resolution height
-let max_iter = 10000;   // Increased iterations for more detail
+let max_iter = 10000;   // Increase iterations for more detail
 let center_x = -0.75;
 let center_y = 0.1;
 let zoom = 100.0;       // Zoom into the fractal
