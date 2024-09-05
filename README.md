@@ -24,8 +24,8 @@ Ensure that you have [Rust](https://www.rust-lang.org/tools/install) installed o
 #### Installation
 1. Clone this repository:
    ```bash
-   git clone https://github.com/surajk-m/mandelbrot-set.git
-   cd mandelbrot-rust
+   git clone https://github.com/surajk-m/mandelbrot_set.git
+   cd mandelbrot_set
    ```
 
 2. Build the project:
