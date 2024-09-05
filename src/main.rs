@@ -38,10 +38,9 @@ fn generate_mandelbrot(
 
                     let pixel = if m < max_iter {
                         let ratio = m as f64 / max_iter as f64;
-                        let red = (9.0 * (1.0 - ratio) * ratio.powf(3.0) * 255.0) as u8;
-                        let green =
-                            (15.0 * (1.0 - ratio).powf(2.0) * ratio.powf(2.0) * 255.0) as u8;
-                        let blue = (8.5 * (1.0 - ratio).powf(3.0) * ratio * 255.0) as u8;
+                        let red = (255.0 * (ratio).powf(0.5)) as u8;
+                        let green = (255.0 * (1.0 - ratio).powf(2.0)) as u8;
+                        let blue = (255.0 * (ratio * (1.0 - ratio)).powf(0.5)) as u8;
                         vec![red, green, blue]
                     } else {
                         vec![0, 0, 0] // Black for points in the Mandelbrot set
